@@ -48,7 +48,7 @@ Start Python Hadoop job.
 bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.7.1.jar -mapper /home/wordcount/mapper.py -reducer /home/wordcount/reducer.py -input wordcount/input/book.txt -output wordcount/python-output
 ```
 
-Check Java Hadoop job output.
+Check Python Hadoop job output.
 ```
 bin/hdfs dfs -ls wordcount/python-output
 bin/hdfs dfs -cat wordcount/python-output/part-00000
