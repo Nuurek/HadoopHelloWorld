@@ -3,6 +3,7 @@
 Install docker, pull image and run it binding `/home` directory.
 ```
 zypper install docker
+systemctl start docker
 docker -v
 docker pull sequenceiq/hadoop-docker:2.7.1
 docker run -v /home:/home -it sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
